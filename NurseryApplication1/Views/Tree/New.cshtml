@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Tree</h2>
+<a class="navlink" style="color:green" ; href="/Tree/List">Go Back To List </a>
+
+<form action="/Tree/Create" method="POST">
+    <div>
+        <label>Name:</label> <input type="text" name="TreeName" />
+    </div>
+    <div>
+        <label>Height (Inches):</label> <input type="number" name="TreeHeight" />
+    </div>
+    <div>
+        <label>Categories Id:</label> <input type="number" name="CategoriesId" />
+    </div>
+
+    <div>
+        <input type="submit" value="Add Tree" />
+
+    </div>
+</form>
